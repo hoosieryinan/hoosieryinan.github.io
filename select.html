@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table,th, td{
+	border:1px solid black;
+}
+</style>
+</head>
+<body>
+
+<?php
+$servername = "db.soic.indiana.edu";
+$username = "i308u16_team05";
+$password = "my+sql=i308u16_team05";
+$dbname = "i308u16_team05";
+
+$conn=mysqli_connect("db.soic.indiana.edu", 
+"i308u16_team05","my+sql=i308u16_team05","i308u16_team05");
+//check connection
+if(!$conn){
+	die("connection failed:" . mysqli_connect_error());
+}
+
+$sql = "SELECT artist_id, first_name, last_name, dob,gender FROM artist";
+$result = mysqli_query($conn, $sql);
+
+if (mysqli_num_rows($result) > 0) {
+    echo "<talbe>
+	<tr>
+	<th>artist_id</th>
+	<th>first_name</th>
+	<th>last_name</th>
+	<th>dob</th>
+	<th>gender</th>
+	</tr>";
+ // output data of each row   
+ 	while($row = $result->fetch_assoc()) {
+		 echo
+	"<tr>
+	<td>".$row["artist_id"]."</td>
+	<td>".$row["first_name"]."</td>
+	<td>".$row["last_name"]."</td>
+	<td>".$row["dob"]."</td>
+	<td>".$row["gender"]."</td>
+	</tr>";
+	 }
+
+    echo "</talbe>";
+	
+}else{
+	echo "Oops...";
+}
+mysqli_close($conn);
+?>
+
+</body>
+</html>
+

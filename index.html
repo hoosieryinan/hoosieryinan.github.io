@@ -1,0 +1,348 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Max Portfolio</title>
+<link rel="shortcut icon" href="image/favicon.png">
+<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+<style type="text/css">
+
+body {
+	 color: #000000;
+	 font-family: 'Montserrat', sans-serif;
+	 font-size: 90%;
+	 margin: 0px;
+	 text-align: center;
+	 background-color: #FFF;
+	 background-image: none;
+	 }
+	 
+.header {
+		background-color:#FFFFFF;
+		box-shadow:0px 4px 15px rgba(0,0,0,0.07);
+		padding: 0px 0px 0px 0px;
+		height: 135px;
+		position: fixed;
+		top: 0px;
+		width: 100%;
+		z-index: 50;
+		}
+		
+.wrapper {
+	     width: 960px;
+	     margin: 0px auto;
+	     background-image:none;
+	     background-repeat: no-repeat;
+	     background-position: 0px 0px;
+	     text-align: left;
+	     }
+		 
+.container_12 {
+	          margin-left: auto;
+	          margin-right: auto;
+	          width: 960px;
+              }
+			  
+	 
+.listMenu {
+		 position:fixed;
+		 width:150px;
+	 	-webkit-transition:width 1s; 
+ 		 transition: width 1s;
+		 }
+ .listMenu:hover{
+    			width:180px;
+    		}
+    			
+
+.listMenu ul li {
+  				float: right;
+ 			}
+
+.listMenu ul li a {
+ 				 margin-top: 2px;
+  				 font-family: 'Montserrat', sans-serif;
+  				 font-size: 12px;
+ 				 color:#FFFFFF;
+  				 text-decoration: none;
+ 				 padding-top: 7px;
+  				 padding-left: 5px;
+  				 width: 135px;
+  				 height: 23px;
+  				 float: right;
+  				 position:relative;
+  				 background-color:#000000;
+				}
+
+.listMenu ul li a:hover {
+ 				 		background-color:#7B7B7B;
+ 				}
+ 
+ .listMenu ul li.active a {
+  						color: #ffaa00;
+  						background: #292929;
+ 						}
+ 
+.main-story {
+	background-repeat: no-repeat;
+	background-position: 10px 142px;
+	height: 680px;
+	background-color: #FFF;
+	background-image:url(image/main4.jpg);
+}
+
+
+h1 {
+	text-align:center;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	color:#7B7B7B;	
+}
+h2 {
+	text-align:center;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	color:#7B7B7B;
+}
+ table.pic {
+    border-spacing: 1;
+    }
+    table.pic td {
+    padding: 5px;
+    border: 4px solid #cccccc;
+    }
+    table.pic tr:nth-child(odd) {
+    background-color: #f2f2f2;
+        }
+
+    table.pic div {
+        display:table-cell; 
+        vertical-align:middle;
+    }
+
+table {
+  border-spacing: 0.5rem;
+  font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+  font-size:15px;
+}
+td {
+  padding: 0.5rem;
+}
+
+table.table td:nth-child(1) { background: hsl(150, 50%, 50%); }
+table.table td:nth-child(2) { background: hsl(160, 60%, 50%); }
+table.table td:nth-child(3) { background: hsl(170, 70%, 50%); }
+table.table td:nth-child(4) { background: hsl(180, 80%, 50%); }
+table.table td:nth-child(5) { background: hsl(190, 90%, 50%); }
+table.table td:nth-child(6) { background: hsl(200, 99%, 50%); }
+
+.footer {
+		clear: both;
+		background: rgba(0, 0, 0, 0.2);
+		padding: 5px 10px;}
+.footer p {
+		  font-family: 'Montserrat', sans-serif;
+		  font-size: 90%;
+		  text-align: right;}
+.footer a {
+		  color: #000000;}
+	 
+</style>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<!-- header -->
+<div class="header">
+			<div class="container_12">
+            <img src="image/Mylogo.gif" alt="" width="135" height="135">		               
+<!-- the menu list -->            
+		    <div class="listMenu">
+		      <ul style="list-style-type:none">
+		        <li><a href="index.html">Home</a></li>
+		        <li><a href="projects.html">Projects</a></li>
+		        <li><a href="photography.html">Photography</a></li>
+		        <li><a href="programming.html">Programming</a></li>
+                <li><a href="resume.html">Resume</a></li>
+	          </ul>
+		      </div>
+<!-- the menu list end-->
+
+			</div>
+            </div>                
+<!-- header end -->
+
+<!-- content -->
+<div class="wrapper">
+<div class="main-story container_12">
+				<div class="intro grid_3 push_9">
+				  <p class="date"></p>
+					<p><a href="index.html">					 
+					</a></p>				
+                </div>
+		</div>
+<h1>A Little Bit About Me</h1>
+
+<!--table1 about me-->
+<table class="table">
+<!-- first row-->
+  <tr>
+    <td>Hi, my name is <strong>Max</strong></td>
+    <td>a student at Indiana University</td>
+    <td>My major is informatics</td>
+    <td>Minor: Computer Science & <abbr title= "HumanCenteredComputing">HCC</abbr></td>
+    <td>WORK</td>
+    <td>@<abbr title="University Information Technology Services">UITS</abbr></td>
+  </tr>
+<!-- second row-->
+  <tr>
+    <td colspan="2">Technology Consultant & Desk Assitant</td>
+    <td>@TulipTree Office</td>
+    <td>PROGRAMMING</td>
+    <td>PHOTOGRAPHY</td>
+    <td>DESIGN</td>
+  </tr>
+  <!-- third row-->
+    <tr>
+    <td colspan="4"><p>Program skills:Scheme, Javascript, CSS, HTML, JAVA, C</p>
+    <p>Design skills: MAYA3D, Unity, Unreal, Photoshop, Illustrator, Coreldraw</p>
+    <p>Analytic Skills: Excel, Access</p></td>
+    <td rowspan="3">TeamPlayer
+    </td>
+    <td>ProblemSovling</td>
+  </tr>
+  <!-- fouth row-->
+  <tr>
+    <td rowspan="2">Activities</td>
+    <td>TeacherAssitant</td>
+    <td>Business Analytics Technology</td>
+    <td>IU Events Ambassador</td>
+    <td>Learner</td>
+  </tr>
+  <!-- fifth row-->
+  <tr>
+    <td>HONOR 2015</td>
+    <td>STEAM</td>
+    <td>Education</td>
+    <td>Futuristic</td>
+  </tr>
+</table>
+<!-- table1 end-->
+
+<h1>Photography</h1>
+<h2><cite>See the world through lens</cite></h2>
+ <!-- table photos--> 
+<table class="pic" style="width: 100%;">
+<tbody>
+<!--table1-->
+<tr>
+<td>
+<a href="the_window.html" target="_blank">
+<img src="image/FullSizeRender3.jpg" alt="The Window by Max" width="371" height="521" /></a>
+</td>
+<td>
+<a href="the_worker.html" target="_blank">
+<img src="image/IMG_0405.JPG" alt="The worker by Max" width="466" height="521" /></a>
+</td>
+</tr>
+<!-- table2-->
+<tr>
+<td>
+<a href="the_couple.html" target="_blank">
+<img src="image/FullSizeRender19.jpg" alt="Grad Couple by Max" width="404" height="409" /></a></td>
+<td><img src="image/IMG_0475.JPG" alt="father and daughter by Max" width="421" height="437" />
+</td>
+</tr>
+<!--table3-->
+<tr>
+<td>
+<a href="jean-baptiste_carpeaux.html" target="_blank">
+<img src="image/IMG_0407.JPG" alt="jean-baptiste_carpeaux" width="438" height="422" /></a>
+</td>
+<td>
+<a href="the_reader.html" target="_blank">
+<img src="image/FullSizeRender24.jpg" alt="reader" width="465" height="395" /></a>
+</td>
+</tr>
+</tbody>
+</table>
+<!--table4-->
+<h3><span style="color:#7B7B7B">The early color</span></h3>
+<em>I like took photos, it was meaningful for me. Since I was a child,
+I was facinated about the pictures that was taken by my family. 
+And it became the most important memory of my Childhood life. ------Max</em>
+<p>Here are some quote I like from famous photographers:</p>
+<blockquote style="font-family:Constantia, 'Lucida Bright', 'DejaVu Serif', Georgia, serif; font-size:14px;"><p>“In photography there is a reality so subtle that it becomes more real than reality."------Alfred Stieglitz</p>
+<p>“I don’t trust words. I trust pictures.”------Gilles Peress</p>
+<p>“The camera makes you forget you’re there. It’s not like you are hiding but you forget, you are just looking so much."------Annie Leibovitz</p></blockquote>
+
+<table  class="pic" style="width: 100%;">
+<tbody>
+<tr>
+<td>
+<a href="the_Moon.html" target="_blank">
+<img src="image/FullSizeRender26.jpg" alt="the_Moon" width="438" height="422" /></a>
+</td>
+<td>
+<a href="hotel.html" target="_blank">
+<img src="image/FullSizeRender27.jpg" alt="the_hotel" width="465" height="395" /></a>
+</td>
+</tr>
+<!--table5-->
+<tr>
+<td>
+<a href="bar.html" target="_blank">
+<img src="image/IMG_0581.JPG" alt="bar" width="438" height="422" /></a>
+</td>
+<td>
+<a href="cock.html" target="_blank">
+<img src="image/IMG_0584.JPG" alt="cock" width="465" height="395" /></a>
+</td>
+</tr>
+<!--table6-->
+<tr>
+<td>
+<a href="SeniorPortrait.html" target="_blank">
+<img src="image/IMG0216.JPG" alt="bar" width="438" height="422" /></a>
+</td>
+<td>
+<a href="documentary.html" target="_blank">
+<img src="image/IMG_0486.JPG" alt="cock" width="465" height="395" /></a>
+</td>
+</tr>
+<!--table5-->
+<tr>
+<td>
+<a href="nightcolor.html" target="_blank">
+<img src="image/IMG1319.JPG" alt="bar" width="438" height="422" /></a>
+</td>
+<td>
+<a href="redfish.html" target="_blank">
+<img src="image/IMG1318.JPG" alt="cock" width="465" height="395" /></a>
+</td>
+</tr>
+<!--table6-->
+<tr>
+<td>
+<a href="road.html" target="_blank">
+<img src="image/IMG_0491.JPG" alt="road" width="438" height="422" /></a>
+</td>
+<td>
+<a href="buildingnyc.html" target="_blank">
+<img src="image/IMG000nyc.JPG" alt="NYC" width="465" height="395" /></a>
+</td>
+</tr>
+
+</tbody>
+</table> 
+<!--table photos end-->
+</div>  
+<!-- content wrapper end -->  
+
+<!--footer-->
+<div class="footer clearfix">
+			<div class="container_12">
+				<p class="grid_12"><a href="http://cgi.soic.indiana.edu/~yixue/index.html">Max's Portfolio</a> | <a href="https://www.facebook.com/yinan.xue.soulinmuziq">Facebook</a> | <a href="https://www.instagram.com/max_yinan/">Instagram</a> | <a href="">Scan me @ Wechat  <img src="image/IMG_0589.JPG" width="150" height="185" alt=""/></a></p>
+			</div> </div>
+ <!--footer end-->
+        
+</body>
+</html>
